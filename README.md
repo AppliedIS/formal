@@ -1,4 +1,8 @@
-# Applied Information Sciences
+
+# formal
+
+a javascript playground for forms
+
 ## React/Redux Starter Kit
 
 This starter kit is based on the work of Cory House and his

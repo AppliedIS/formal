@@ -23,15 +23,15 @@
         <ul>
             <li>
                 <label for="name">Your Name:</label>
-                <input type="text" placeholder="Your Name" id="name" name="name" tabindex="1"/ onblur="validateName(name)" >
+                <input type="text" placeholder="Your Name" id="name" name="name" tabindex="1"/ required />
             </li>
             <li>
                 <label for="email">Your Email:</label>
-                <input type="email" placeholder="Your Email" id="email" name="email" tabindex="2"/>
+                <input type="email" placeholder="Your Email" id="email" name="email" tabindex="2" required/>
             </li>
             <li>
                 <label for="message">Message:</label>
-                <textarea placeholder="Message…" id="message" name="message" tabindex="3"></textarea>
+                <textarea placeholder="Message…" id="message" name="message" tabindex="3" required></textarea>
             </li>
         </ul>
         <input type="submit" value="Send Message" id="submit"/>

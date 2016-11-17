@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     // Test for placeholder support
     $.support.placeholder = (function() {
-        var i = document.createElement('input');
+        let i = document.createElement('input');
         return 'placeholder' in i;
     })();
 
@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('.form li').find('input, textarea').on('keyup blur focus', function(e) {
 
             // Cache our selectors
-            var $this = $(this),
+            let $this = $(this),
                 $parent = $this.parent();
 
             // Add or remove classes

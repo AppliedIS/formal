@@ -1,0 +1,125 @@
+/* General
+==================================== */
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font: 1em/1.5 Arial, Helvetica, sans-serif;
+}
+
+.fancy {
+    margin: 2em auto;
+    max-width: 25em;
+    width: 95%;
+}
+
+h1.title {
+    background:  $theme3-gray-dark;
+    color: $clr-white;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.5em 0;
+}
+/* Form
+==================================== */
+.form {
+    ul {
+        background: $theme3-gray-light;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+    li {
+        border: 1px solid $theme3-blue-dark;
+        margin-bottom: 10px;
+        position: relative;
+    }
+}
+
+input,
+label,
+textarea {
+    border: 0;
+    display: block;
+}
+
+input,
+textarea {
+    height: 100%;
+    outline: 0;
+    padding: 2.25em 1em 1em;
+    width: 100%;
+}
+
+textarea {
+    height: 16em;
+    resize: none;
+}
+
+label {
+    -webkit-transition: 0.333s ease top, 0.333s ease opacity;
+    color: $theme-nasic-orange;
+    font-size: 0.8125em;
+    /* 13/16 */
+    left: 1.23em;
+    opacity: 1;
+    position: absolute;
+    top: 1.23em;
+    transition: 0.333s ease top, 0.333s ease opacity;
+}
+//Submit Button
+
+input[type='submit'] {
+    -webkit-appearance: none;
+    /* remove default browser <button> styling */
+    -webkit-transition: 0.333s ease -webkit-transform;
+    background: $theme-nasic-orange;
+    border-radius: 3px;
+    color: $clr-white;
+    margin-bottom: 1em;
+    padding: 0.75em;
+    transition: 0.333s ease transform;
+
+    &:hover {
+        -webkit-transform: scale(1.025);
+        cursor: pointer;
+        transform: scale(1.025);
+    }
+
+    &:active {
+        -webkit-transform: scale(.975);
+        transform: scale(.975);
+    }
+}
+
+.js-hide-label label {
+    opacity: 0;
+    top: 1.5em;
+}
+
+.js-unhighlight-label label {
+    color: $theme3-gray-light;
+}
+
+.js-error {
+    border-color: $theme-nasic-orange !important; /* override all cases */
+}
+.js-error + li {
+    border-top-color: $theme-nasic-orange;
+}
+.js-error label {
+    color: $theme-nasic-orange;
+}
+
+ul, menu, dir {
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+}

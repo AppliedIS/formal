@@ -12,18 +12,31 @@
 
 <body>
     <div id="app">
-    <form>
-      <input type="text"
-          name="First Name"
-          class=""
-          placeholder=""
-          value=""
-          onchange="changeEventHandler(event);" />
-      <input type="submit" value="Submit" onsubmit="submitFunction(event);">
-    </form>
-    <div id="Message">
+        <form>
+            <input type="text" name="First Name" class="" placeholder="First Name" value="" onchange="changeEventHandler(event);" />
+            <input type="submit" value="Submit" onsubmit="submitFunction(event);">
+        </form>
+        <div class="fancy">
+            <form class="go-bottom">
+                <h2>To Bottom</h2>
+                <div>
+                    <input id="name" name="name" type="text" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div>
+                    <input id="phone" name="phone" type="tel" required>
+                    <label for="phone">Primary Phone</label>
+                </div>
+                <div>
+                    <textarea id="message" name="phone" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </form>
+        </div>
+
+        <div id="Message">
+        </div>
     </div>
-  </div>
 </body>
 
 </html>

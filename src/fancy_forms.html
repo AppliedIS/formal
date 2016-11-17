@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+
+    <!-- Viewport tag to make things responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google's hosted version of jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./fancy_script.js"></script>
+
+    <link rel="stylesheet" href="/styles/bundle.min.css" />
+
+</head>
+
+<body>
+
+  <section class="fancy">
+    <h1 class="title">Contact Me</h1>
+    <form id="" class="form" action="" method="get" name="">
+        <ul>
+            <li>
+                <label for="name">Your Name:</label>
+                <input type="text" placeholder="Your Name" id="name" name="name" tabindex="1"/ onblur="validateName(name)" >
+            </li>
+            <li>
+                <label for="email">Your Email:</label>
+                <input type="email" placeholder="Your Email" id="email" name="email" tabindex="2"/>
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <textarea placeholder="Message…" id="message" name="message" tabindex="3"></textarea>
+            </li>
+        </ul>
+        <input type="submit" value="Send Message" id="submit"/>
+    </form>
+</section>
+
+
+
+
+</body>
+</html>

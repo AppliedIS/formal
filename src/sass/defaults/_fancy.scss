@@ -31,7 +31,7 @@ h1.title {
 ==================================== */
 .form {
     ul {
-        background: $theme3-gray-light;
+        background: $theme3-blue-med;
         margin-bottom: 1em;
         padding: 1em;
     }
@@ -52,6 +52,7 @@ textarea {
 
 input,
 textarea {
+    background-color: $theme3-gray-light;
     height: 100%;
     outline: 0;
     padding: 2.25em 1em 1em;

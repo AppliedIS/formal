@@ -35,15 +35,28 @@
                 </li>
             </ul>
             <a class="button" href="#" role="button">
-                <span>remove</span>
+                <span>Submit</span>
                 <div class="icon">
-                    <i class="fa fa-remove"></i>
+                    <i class="fa fa-arrow-right"></i>
                     <i class="fa fa-check"></i>
                 </div>
             </a>
         </form>
     </section>
-
+    <script>(function () {
+        let removeSuccess;
+        removeSuccess = function () {
+            return $('.button').removeClass('success');
+        };
+        $(document).ready(function () {
+            return $('.button').click(function () {
+                $(this).addClass('success');
+                return setTimeout(removeSuccess, 3000);
+            });
+        });
+    }.call(this));
+    //# sourceURL=pen.js
+    </script>
 
 
 

@@ -1,0 +1,114 @@
+//Submit Button
+// Variables
+$speed: '0.25s';
+$transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
+/* Main Styles */
+.button {
+    background-color: $theme-nasic-orange;
+    border-radius: 2px;
+    bottom: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+    color: $clr-white;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 40px;
+    left: 0;
+    line-height: 40px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    transition: $transition;
+    width: 170px;
+
+    .icon,
+    span {
+        display: block;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        top: 0;
+    }
+
+    span {
+        font-size: 18px;
+        left: 0;
+        line-height: inherit;
+        text-transform: uppercase;
+        transition: $transition;
+        width: 72%;
+
+        &:after {
+            background-color: $theme-nasic-orange-dark;
+            content: '';
+            height: 70%;
+            position: absolute;
+            right: -1px;
+            top: 15%;
+            width: 2px;
+        }
+    }
+
+    .icon {
+        right: 0;
+        transition: $transition;
+        width: 28%;
+
+        .fa {
+            font-size: 26px;
+            transition: $transition, height #{$speed} ease;
+            vertical-align: middle;
+        }
+
+        .fa-remove {
+            height: 36px;
+        }
+
+        .fa-check {
+            display: none;
+        }
+    }
+
+    &.success,
+    &:hover {
+        span {
+            left: -72%;
+            opacity: .9;
+        }
+
+        .icon {
+            width: 100%;
+
+            .fa {
+                font-size: 38px;
+            }
+        }
+    }
+
+    &.success {
+        background-color: #27ae60;
+
+        .icon {
+            .fa-arrow-right{
+                display: none;
+            }
+
+            .fa-check {
+                display: inline-block;
+            }
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+
+        .icon .fa-arrow-right {
+            height: 46px;
+        }
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}

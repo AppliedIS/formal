@@ -7,6 +7,7 @@ $theme3-blue-med: #607d8b;
 
 $theme-nasic-yellow: #ffd800;
 $theme-nasic-orange: #e96a01;
+$theme-nasic-orange-dark: darken($theme-nasic-orange, 5%);
 
 
 // Prefix all colors for use outside of this file with $clr and with a generic

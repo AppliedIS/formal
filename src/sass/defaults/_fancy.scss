@@ -21,7 +21,7 @@ textarea {
 }
 
 h1.title {
-    background:  $theme3-gray-dark;
+    background: $theme3-gray-dark;
     color: $clr-white;
     font-size: 1.5em;
     margin: 0;
@@ -76,27 +76,118 @@ label {
     transition: 0.333s ease top, 0.333s ease opacity;
 }
 //Submit Button
-
-input[type='submit'] {
-    -webkit-appearance: none;
-    /* remove default browser <button> styling */
-    -webkit-transition: 0.333s ease -webkit-transform;
-    background: $theme-nasic-orange;
-    border-radius: 3px;
+// Variables
+$color: #c0392b;
+$color-dark: #a53125;
+$speed: '0.25s';
+$transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
+/* Main Styles */
+.button {
+    background-color: $color;
+    border-radius: 5px;
+    bottom: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
     color: $clr-white;
-    margin-bottom: 1em;
-    padding: 0.75em;
-    transition: 0.333s ease transform;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    left: 0;
+    line-height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    transition: $transition;
+    width: 300px;
+
+    .icon,
+    span {
+        display: block;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        top: 0;
+    }
+
+    span {
+        font-size: 22px;
+        left: 0;
+        line-height: inherit;
+        text-transform: uppercase;
+        transition: $transition;
+        width: 72%;
+
+        &:after {
+            background-color: $color-dark;
+            content: '';
+            height: 70%;
+            position: absolute;
+            right: -1px;
+            top: 15%;
+            width: 2px;
+        }
+    }
+
+    .icon {
+        right: 0;
+        transition: $transition;
+        width: 28%;
+
+        .fa {
+            font-size: 30px;
+            transition: $transition, height #{$speed} ease;
+            vertical-align: middle;
+        }
+
+        .fa-remove {
+            height: 36px;
+        }
+
+        .fa-check {
+            display: none;
+        }
+    }
+
+    &.success,
+    &:hover {
+        span {
+            left: -72%;
+            opacity: 0;
+        }
+
+        .icon {
+            width: 100%;
+
+            .fa {
+                font-size: 45px;
+            }
+        }
+    }
+
+    &.success {
+        background-color: #27ae60;
+
+        .icon {
+            .fa-remove {
+                display: none;
+            }
+
+            .fa-check {
+                display: inline-block;
+            }
+        }
+    }
 
     &:hover {
-        -webkit-transform: scale(1.025);
-        cursor: pointer;
-        transform: scale(1.025);
+        opacity: 0.9;
+
+        .icon .fa-remove {
+            height: 46px;
+        }
     }
 
     &:active {
-        -webkit-transform: scale(.975);
-        transform: scale(.975);
+        opacity: 1;
     }
 }
 
@@ -110,16 +201,21 @@ input[type='submit'] {
 }
 
 .js-error {
-    border-color: $theme-nasic-orange !important; /* override all cases */
+    border-color: $theme-nasic-orange !important;
+    /* override all cases */
 }
+
 .js-error + li {
     border-top-color: $theme-nasic-orange;
 }
+
 .js-error label {
     color: $theme-nasic-orange;
 }
 
-ul, menu, dir {
+dir,
+menu,
+ul {
     -webkit-margin-after: 0;
     -webkit-margin-before: 0;
     -webkit-padding-start: 0;

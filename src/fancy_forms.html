@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google's hosted version of jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+
     <script src="./fancy_script.js"></script>
 
     <link rel="stylesheet" href="/styles/bundle.min.css" />
@@ -39,13 +39,14 @@
                     <input type="zip" id="zip" name="zip" placeholder="Zip Code" />
                 </li>
                 <li>
-                    <label for="city">City:</label>
-                    <input type="city" placeholder="City" id="city" name="city" />
-                </li>
-                <li>
                     <label for="state">State:</label>
                     <input type="state" placeholder="State"  id="state" name="state" />
                 </li>
+                <li>
+                  <label for="city">City:</label>
+                  <div id="city_wrap"><input  placeholder="City" id="city" name="city"></div>
+                </li>
+
             </ul>
             <a class="button" href="#" role="button">
                 <span>Submit</span>

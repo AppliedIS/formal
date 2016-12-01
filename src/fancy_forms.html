@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google's hosted version of jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
     <script src="./fancy_script.js"></script>
 
     <link rel="stylesheet" href="/styles/bundle.min.css" />
@@ -33,6 +34,18 @@
                     <label for="message">Message:</label>
                     <textarea placeholder="Message…" id="message" name="message" tabindex="3" required></textarea>
                 </li>
+                <li>
+                    <label for="zip">Zip:</label>
+                    <input type="zip" id="zip" name="zip" placeholder="Zip Code" />
+                </li>
+                <li>
+                    <label for="city">City:</label>
+                    <input type="city" placeholder="City" id="city" name="city" />
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input type="state" placeholder="State"  id="state" name="state" />
+                </li>
             </ul>
             <a class="button" href="#" role="button">
                 <span>Submit</span>
@@ -43,19 +56,71 @@
             </a>
         </form>
     </section>
-    <script>(function () {
-        let removeSuccess;
-        removeSuccess = function () {
-            return $('.button').removeClass('success');
-        };
-        $(document).ready(function () {
-            return $('.button').click(function () {
-                $(this).addClass('success');
-                return setTimeout(removeSuccess, 3000);
+    <script>
+        (function() {
+            let removeSuccess;
+            removeSuccess = function() {
+                return $('.button').removeClass('success');
+            };
+            $(document).ready(function() {
+                return $('.button').click(function() {
+                    $(this).addClass('success');
+                    return setTimeout(removeSuccess, 3000);
+                });
             });
+        }.call(this));
+        //# sourceURL=pen.js
+    </script>
+    <script>
+    //when the user clicks off of the zip field:
+    $(document).ready(function(){
+    $('#zip').keyup(function(){
+      if($(this).val().length == 5){
+      var zip = $(this).val();
+      var city = '';
+      var state = '';
+      //make a request to the google geocode api
+      $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+zip)
+      .success(function(response){
+        //find the city and state
+        var address_components = response.results[0].address_components;
+
+        $.each(address_components, function(index, component){
+          var types = component.types;
+          $.each(types, function(index, type){
+            if(type == 'locality') {
+              city = component.long_name;
+            }
+            if(type == 'administrative_area_level_1') {
+              state = component.short_name;
+            }
+          });
         });
-    }.call(this));
-    //# sourceURL=pen.js
+        //pre-fill the city and state
+        var cities = response.results[0].postcode_localities;
+        if(cities) {
+          //turn city into a dropdown if necessary
+          var $select = $(document.createElement('select'));
+          console.log(cities);
+          $.each(cities, function(index, locality){
+            var $option = $(document.createElement('option'));
+            $option.html(locality);
+            $option.attr('value',locality);
+            if(city == locality) {
+              $option.attr('selected','selected');
+            }
+            $select.append($option);
+          });
+          $select.attr('id','city');
+          $('#city_wrap').html($select);
+        } else {
+          $('#city').val(city);
+        }
+        $('#state').val(state);
+      });
+      }
+    });
+    });
     </script>
 
 

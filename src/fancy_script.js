@@ -14,7 +14,7 @@ $(document).ready(function() {
         });
 
         // Code for adding/removing classes here
-        $('.form li').find('input, textarea').on('keyup blur focus', function(e) {
+        $('.form li').find('input, textarea').on('keyup blur input focus', function(e) {
 
             // Cache our selectors
             let $this = $(this),

@@ -5,6 +5,7 @@
 @import 'libraries/neat/neat';
 
 // Defaults
+@import 'defaults/breakpoints';
 @import 'defaults/colors';
 @import 'defaults/typography';
 @import 'defaults/tags';
@@ -13,5 +14,6 @@
 
 // Components
 @import 'components/buttons';
+@import 'components/layout';
 
 // Pages

@@ -1,87 +1,4 @@
-// //theme 3
-//
-// * {
-//     box-sizing: border-box;
-// }
-// //fancy form styles
-// .fancy form {
-//     float: left;
-//     margin: 20px;
-//     width: 320px;
-//
-//     > div {
-//         overflow: hidden;
-//         position: relative;
-//     }
-//
-//     input,
-//     textarea {
-//         background: $theme3-gray-light;
-//         border: 2px solid gray;
-//         left: 0;
-//         outline: 0;
-//         padding: 8px 12px;
-//         position: relative;
-//         top: 0;
-//         width: 100%;
-//         z-index: 1;
-//
-//         &:valid {
-//             // Hides the label
-//             background: white;
-//         }
-//
-//         &:focus {
-//             border-color: $theme-nasic-yellow;
-//         }
-//
-//         &:focus + label {
-//             background: $theme-nasic-yellow;
-//             color: $clr-dark;
-//             font-size: 70%;
-//             padding: 1px 6px;
-//             z-index: 2;
-//         }
-//     }
-//
-//     label {
-//         color: $clr-dark;
-//         padding: 7px 6px;
-//         position: absolute;
-//         transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
-//         z-index: 2;
-//     }
-//
-//     textarea {
-//         display: block;
-//         resize: vertical;
-//     }
-// }
-//
-// form.go-bottom {
-//     input,
-//     textarea {
-//         padding: 12px;
-//     }
-//
-//     label {
-//         bottom: 0;
-//         left: 0;
-//         top: 0;
-//         width: 100%;
-//     }
-//
-//     input:focus,
-//     textarea:focus {
-//         padding: 20px 6px 4px;
-//     }
-//
-//     input:focus + label,
-//     textarea:focus + label {
-//         bottom: 100%;
-//         margin-bottom: -16px;
-//     }
-// }
+
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $theme3-gray-dark;
@@ -100,4 +17,8 @@
 
 .form li {
     color: $theme3-gray-light;
+}
+
+textarea {
+    font-family: $font-stack-body;
 }

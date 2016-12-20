@@ -12,6 +12,7 @@
 
     <script src="./app/components/form/fancy_script.js"></script>
     <script src="./app/components/form/zip_prefill.js"></script>
+    <script src="./app/components/form/button.js"></script>
 
     <link rel="stylesheet" href="/styles/bundle.min.css" />
 
@@ -59,7 +60,9 @@
             </a>
         </form>
         <h1>Files</h1>
-        <p>For zip code prefill use file zip_prefill.js</p>
+        <p>For label float use fancy_script.js and forms.scss</p>
+        <p>For zip code prefill use file zip_prefill.js and buttons.scss</p>
+        <p>For button use button.js</p>
         <pre>
           <h1>Code</h1>
         <code class="language-markup">
@@ -73,23 +76,6 @@
       </pre>
 
     </main>
-    <script>
-        (function() {
-            let removeSuccess;
-            removeSuccess = function() {
-                return $('.button').removeClass('success');
-            };
-            $(document).ready(function() {
-                return $('.button').click(function() {
-                    $(this).addClass('success');
-                    return setTimeout(removeSuccess, 3000);
-                });
-            });
-        }.call(this));
-        //# sourceURL=pen.js
-    </script>
-
-
 
 
 </body>

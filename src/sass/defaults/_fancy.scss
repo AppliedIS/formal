@@ -61,7 +61,6 @@ textarea {
 }
 
 label {
-    -webkit-transition: 0.333s ease top, 0.333s ease opacity;
     color: $theme-nasic-orange;
     font-size: 0.8125em;
     /* 13/16 */
@@ -69,7 +68,7 @@ label {
     opacity: 1;
     position: absolute;
     top: 1.23em;
-    transition: 0.333s ease top, 0.333s ease opacity;
+    transition: all 0.333s ease top, all 0.333s ease opacity;
 }
 
 .js-hide-label label {

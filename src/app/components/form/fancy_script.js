@@ -21,7 +21,7 @@ $(document).ready(function() {
                 $parent = $this.parent();
 
             // Add or remove classes
-            if (e.type == 'keyup') {
+            if (e.type == 'focus') {
                 // keyup code here
                 if ($this.val() == '') {
                     $parent.addClass('js-hide-label');
@@ -35,12 +35,7 @@ $(document).ready(function() {
                 } else {
                     $parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
                 }
-            } else if (e.type == 'focus') {
-                // focus code here
-                if ($this.val() !== '') {
-                    $parent.removeClass('js-unhighlight-label');
-                }
-            }
+            } 
         });
     }
 });

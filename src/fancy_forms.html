@@ -10,7 +10,6 @@
     <!-- Google's hosted version of jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <script src="./app/components/form/fancy_script.js"></script>
     <script src="./app/components/form/zip_prefill.js"></script>
     <script src="./app/components/form/button.js"></script>
 
@@ -20,37 +19,36 @@
 
 <body>
 
-    <main class="fancy">
 
-        <form id="" class="form" action="" method="get" name="">
-            <h1>Contact Me</h1>
-            <ul>
-                <li>
-                    <label for="name">Your Name:</label>
-                    <input type="text" placeholder="Your Name" id="name" name="name" tabindex="1" / required />
-                </li>
-                <li>
-                    <label for="email">Your Email:</label>
-                    <input type="email" placeholder="Your Email" id="email" name="email" tabindex="2" required/>
-                </li>
-                <li>
-                    <label for="message">Message:</label>
-                    <textarea placeholder="Message…" id="message" name="message" tabindex="3" required></textarea>
-                </li>
-                <li>
-                    <label for="zip">Zip:</label>
-                    <input type="zip" id="zip" name="zip" placeholder="Zip Code" />
-                </li>
-                <li>
-                    <label for="state">State:</label>
-                    <input type="state" placeholder="State" id="state" name="state" />
-                </li>
-                <li class="no-bullet">
-                    <label for="city">City:</label>
-                    <div id="city_wrap"><input placeholder="City" id="city" name="city"></div>
-                </li>
+    <h1>Nice input box</h1>
+    <form>
+        <div class="field-container">
+            <input type="text" required placeholder="First name" />
+            <label>First name</label>
+        </div>
+        <div class="field-container">
+            <input type="text" required placeholder="Last name" />
+            <label>Last name</label>
+        </div>
+    </form>
+    <!-- <h1>Contact Me</h1>
+        <form>
 
-            </ul>
+            <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+            <label for="nme"><span>What's your name?</span></label>
+
+            <div>
+                <label for="zip">Zip:</label>
+                <input type="zip" id="zip" name="zip" placeholder="Zip Code" />
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <input type="state" placeholder="State" id="state" name="state" />
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <div id="city_wrap"><input placeholder="City" id="city" name="city"></div>
+            </div>
             <a class="button" href="#" role="button">
                 <span>Submit</span>
                 <div class="icon">
@@ -58,12 +56,12 @@
                     <i class="fa fa-check"></i>
                 </div>
             </a>
-        </form>
-        <h1>Files</h1>
-        <p>For label float use fancy_script.js and forms.scss</p>
-        <p>For zip code prefill use file zip_prefill.js and buttons.scss</p>
-        <p>For button use button.js</p>
-        <pre>
+        </form> -->
+    <h1>Files</h1>
+    <p>For label float use fancy_script.js and forms.scss</p>
+    <p>For zip code prefill use file zip_prefill.js and buttons.scss</p>
+    <p>For button use button.js</p>
+    <pre>
           <h1>Code</h1>
         <code class="language-markup">
           <div class="code">
@@ -75,7 +73,7 @@
         </code>
       </pre>
 
-    </main>
+
 
 
 </body>

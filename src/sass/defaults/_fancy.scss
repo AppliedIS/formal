@@ -1,106 +1,106 @@
-/* General
-==================================== */
-*,
-*:after,
-*:before {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.fancy {
-    margin: 2em auto;
-    max-width: 25em;
-    width: 95%;
-}
-
-h1.title {
-    background: $theme3-gray-dark;
-    color: $clr-white;
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0.5em 0;
-}
-/* Form
-==================================== */
-.form {
-    ul {
-        background: $theme3-blue-med;
-        margin-bottom: 1em;
-        padding: 1em;
-    }
-
-    li {
-        border: 1px solid $theme3-blue-dark;
-        margin-bottom: 10px;
-        position: relative;
-    }
-}
-
-input,
-label,
-select,
-textarea {
-    border: 0;
-    display: block;
-}
-
-input,
-select,
-textarea {
-    background-color: $theme3-gray-light;
-    height: 100%;
-    outline: 0;
-    padding: 2.25em 1em 1em;
-    width: 100%;
-}
-
-textarea {
-    height: 16em;
-    resize: none;
-}
-
-label {
-    color: $theme-nasic-orange;
-    font-size: 0.8125em;
-    /* 13/16 */
-    left: 1.23em;
-    opacity: 1;
-    position: absolute;
-    top: 1.23em;
-    transition: all 0.333s ease top, all 0.333s ease opacity;
-}
-
-.js-hide-label label {
-    opacity: 0;
-    top: 1.5em;
-}
-
-.js-unhighlight-label label {
-    color: $theme3-gray-dark;
-}
-
-.js-error {
-    border-color: $theme-nasic-orange !important;
-    /* override all cases */
-}
-
-.js-error + li {
-    border-top-color: $theme-nasic-orange;
-}
-
-.js-error label {
-    color: $theme-nasic-orange;
-}
-
-dir,
-menu,
-ul {
-    -webkit-margin-after: 0;
-    -webkit-margin-before: 0;
-    -webkit-padding-start: 0;
-}
-
-.no-bullet {
-    list-style-type: none;
-}
+// /* General
+// ==================================== */
+// *,
+// *:after,
+// *:before {
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+//
+// .fancy {
+//     margin: 2em auto;
+//     max-width: 25em;
+//     width: 95%;
+// }
+//
+// h1.title {
+//     background: $theme3-gray-dark;
+//     color: $clr-white;
+//     font-size: 1.5em;
+//     margin: 0;
+//     padding: 0.5em 0;
+// }
+// /* Form
+// ==================================== */
+// .form {
+//     ul {
+//         background: $theme3-blue-med;
+//         margin-bottom: 1em;
+//         padding: 1em;
+//     }
+//
+//     li {
+//         border: 1px solid $theme3-blue-dark;
+//         margin-bottom: 10px;
+//         position: relative;
+//     }
+// }
+//
+// input,
+// label,
+// select,
+// textarea {
+//     border: 0;
+//     display: block;
+// }
+//
+// input,
+// select,
+// textarea {
+//     background-color: $theme3-gray-light;
+//     height: 100%;
+//     outline: 0;
+//     padding: 2.25em 1em 1em;
+//     width: 100%;
+// }
+//
+// textarea {
+//     height: 16em;
+//     resize: none;
+// }
+//
+// label {
+//     color: $theme-nasic-orange;
+//     font-size: 0.8125em;
+//     /* 13/16 */
+//     left: 1.23em;
+//     opacity: 1;
+//     position: absolute;
+//     top: 1.23em;
+//     transition: all 0.333s ease top, all 0.333s ease opacity;
+// }
+//
+// .js-hide-label label {
+//     opacity: 0;
+//     top: 1.5em;
+// }
+//
+// .js-unhighlight-label label {
+//     color: $theme3-gray-dark;
+// }
+//
+// .js-error {
+//     border-color: $theme-nasic-orange !important;
+//     /* override all cases */
+// }
+//
+// .js-error + li {
+//     border-top-color: $theme-nasic-orange;
+// }
+//
+// .js-error label {
+//     color: $theme-nasic-orange;
+// }
+//
+// dir,
+// menu,
+// ul {
+//     -webkit-margin-after: 0;
+//     -webkit-margin-before: 0;
+//     -webkit-padding-start: 0;
+// }
+//
+// .no-bullet {
+//     list-style-type: none;
+// }

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.4 Sans-Serif;
+}
+
+form {
+    float: left;
+    margin: 20px;
+    width: 320px;
+
+    > div {
+        overflow: hidden;
+        position: relative;
+    }
+
+    input,
+    textarea {
+        background: none;
+        border: 2px solid $theme3-gray-light;
+        left: 0;
+        outline: 0;
+        padding: 8px 12px;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+
+        &:valid {
+            // Hides the label
+            background: $clr-white;
+        }
+
+        &:focus {
+            border-color: $theme-nasic-orange;
+        }
+
+        &:focus + label {
+            background: $theme-nasic-orange;
+            color: $clr-white;
+            font-size: 70%;
+            padding: 1px 6px;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+    }
+
+    label {
+        // not padding
+        color: $theme3-gray-light;
+        padding: 10px 6px;
+        position: absolute;
+        transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    }
+
+    textarea {
+        display: block;
+        resize: vertical;
+    }
+}
+
+form.go-bottom {
+    input,
+    textarea {
+        padding: 12px;
+    }
+
+    label {
+        bottom: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    input:focus,
+    textarea:focus {
+        padding: 4px 6px 20px;
+    }
+
+    input:focus + label,
+    textarea:focus + label {
+        margin-bottom: 24px;
+    }
+}

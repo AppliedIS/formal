@@ -23,6 +23,7 @@ $clr-background: $clr-dark;
 $clr-txt: lighten($theme3-gray-light, 20%);
 $clr-highlight: $theme-nasic-yellow;
 $clr-blue-bright: #0000cc;
+$clr-gray-dark-lighten: lighten($theme3-gray-dark, 5%);
 
 $clr-links-out: $clr-white;
 $clr-links-hover: lighten($clr-links-out, 25%);

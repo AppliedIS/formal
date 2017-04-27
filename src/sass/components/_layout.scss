@@ -66,7 +66,7 @@ pre {
 }
 
 .orange-box {
-    background: $theme3-orange;
+    background: $theme-orange-dark;
     height: 70px;
 }
 
@@ -97,6 +97,7 @@ pre {
 
 .gray-dark {
     background: $theme3-gray-dark;
+    border: 1px solid $theme3-gray-light;
     height: 70px;
 }
 //Logo

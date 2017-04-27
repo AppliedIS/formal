@@ -3,7 +3,7 @@ $theme3-dark: #313d4c;
 $theme3-gray-dark: #262d37;
 $theme3-gray-light: #bcc4cc;
 $theme3-blue: #b3d1fd;
-$theme3-blue-dark: #3075a6;
+$theme3-blue-dark: #265c82;
 $theme3-blue-med: #607d8b;
 $theme-yellow: #ffd800;
 $theme-orange: #f0ad4e;
@@ -24,6 +24,11 @@ $clr-links-out: $theme3-blue;
 $clr-links-hover: lighten($theme3-blue, 8%);
 $clr-links_alt-out: $theme3-blue-dark;
 $clr-links_alt-hover: lighten($theme3-blue, 10%);
+
+$clr-btn-primary: $theme3-blue-dark;
+$clr-btn-primary-hover: lighten($clr-btn-primary, 5%);
+$clr-btn-secondary: $theme3-dark;
+$clr-btn-secondary-hover: lighten($clr-btn-secondary, 5%);
 
 $clr-dark: $theme3-gray-dark;
 

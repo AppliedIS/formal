@@ -5,10 +5,11 @@ body {
 }
 
 a {
-    color: $clr-links-out;
+    color: $theme3-blue;
     text-decoration: none;
 
     &:hover {
         color: $clr-links-hover;
+        text-decoration: underline;
     }
 }

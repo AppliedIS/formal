@@ -1,13 +1,16 @@
 //theme 3
+$theme3-dark: #313d4c;
 $theme3-gray-dark: #262d37;
 $theme3-gray-light: #bcc4cc;
 $theme3-blue: #b3d1fd;
 $theme3-blue-dark: #3075a6;
 $theme3-blue-med: #607d8b;
+$theme-yellow: #ffd800;
+$theme-orange: #f0ad4e;
+$theme-orange-dark: darken($theme-orange, 15%);
+$theme3-orange: $theme-orange;
 
-$theme-nasic-yellow: #ffd800;
-$theme-nasic-orange: #e96a01;
-$theme-nasic-orange-dark: darken($theme-nasic-orange, 5%);
+
 
 
 // Prefix all colors for use outside of this file with $clr and with a generic
@@ -17,13 +20,23 @@ $clr-white: #ffffff;
 $clr-alert: #981b1e;
 $clr-green: green;
 
+$clr-links-out: $theme3-blue;
+$clr-links-hover: lighten($theme3-blue, 8%);
+$clr-links_alt-out: $theme3-blue-dark;
+$clr-links_alt-hover: lighten($theme3-blue, 10%);
+
 $clr-dark: $theme3-gray-dark;
 
-$clr-background: $clr-dark;
+$clr-background: $theme3-dark;
 $clr-txt: lighten($theme3-gray-light, 20%);
-$clr-highlight: $theme-nasic-yellow;
+$clr-highlight: $theme-yellow;
 $clr-blue-bright: #0000cc;
 $clr-gray-dark-lighten: lighten($theme3-gray-dark, 5%);
 
 $clr-links-out: $clr-white;
 $clr-links-hover: lighten($clr-links-out, 25%);
+
+$clr-background: $theme3-gray-dark;
+$clr-background-alt: $theme3-dark;
+$clr-txt: $theme3-gray-light;
+$clr-highlight: $theme3-orange;

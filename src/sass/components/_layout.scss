@@ -104,7 +104,7 @@ pre {
 
 .footer {
     padding: 1em 2em;
-    
+
     section {
         @include span-columns(4);
     }
@@ -132,13 +132,14 @@ pre {
         }
     }
 
+    h1,
     h2,
     h3,
     h4 {
         margin-top: 0;
     }
 
-    h1 {
+    h2 {
         &:first-child {
             @include row();
             @include span-columns(12);

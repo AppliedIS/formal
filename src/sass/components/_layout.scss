@@ -100,25 +100,13 @@ pre {
     border: 1px solid $theme3-gray-light;
     height: 70px;
 }
-//Logo
+//Footer
 
-.logos {
-    p {
-        @include span-columns(6);
-    }
-
-    img {
-        @include span-columns(6);
-
-        &:first-child {
-            background: $clr-white;
-        }
-    }
-}
-
-.logos_src {
-    p {
-        @include span-columns(6);
+.footer {
+    padding: 1em 2em;
+    
+    section {
+        @include span-columns(4);
     }
 }
 

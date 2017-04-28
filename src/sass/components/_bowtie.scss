@@ -1,3 +1,4 @@
+
 .bowtie {
     -moz-animation: spin 20s infinite;
     -ms-animation: spin 20s infinite;
@@ -8,36 +9,37 @@
     height: 16px;
     left: 63px;
     position: absolute;
-    top: 42px;
+    top: 36px;
     width: 16px;
     z-index: 1;
-}
 
-.bowtie:before {
-    border-bottom: 10px solid transparent;
-    border-left: 16px solid $theme-orange;
-    border-radius: 3px;
-    border-top: 10px solid transparent;
-    content: '';
-    height: 0px;
-    left: -8px;
-    position: absolute;
-    top: -2px;
-    width: 0px;
-    z-index: 1;
-}
-.bowtie:after {
-    border-bottom: 10px solid transparent;
-    border-radius: 3px;
-    border-right: 16px solid $theme-orange;
-    border-top: 10px solid transparent;
-    content: '';
-    height: 0px;
-    left: 6px;
-    position: absolute;
-    top: -2px;
-    width: 0px;
-    z-index: 1;
+    &:before {
+        border-bottom: 10px solid transparent;
+        border-left: 16px solid $theme-orange;
+        border-radius: 3px;
+        border-top: 10px solid transparent;
+        content: '';
+        height: 0px;
+        left: -8px;
+        position: absolute;
+        top: -2px;
+        width: 0px;
+        z-index: 1;
+    }
+
+    &:after {
+        border-bottom: 10px solid transparent;
+        border-radius: 3px;
+        border-right: 16px solid $theme-orange;
+        border-top: 10px solid transparent;
+        content: '';
+        height: 0px;
+        left: 6px;
+        position: absolute;
+        top: -2px;
+        width: 0px;
+        z-index: 1;
+    }
 }
 
 .bowtie-circle {
@@ -46,7 +48,7 @@
     height: 16px;
     left: 63px;
     position: absolute;
-    top: 42px;
+    top: 36px;
     width: 16px;
     z-index: 2;
 }

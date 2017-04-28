@@ -13,27 +13,31 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
     left: 0;
     line-height: 40px;
     margin: 6px;
-    overflow: hidden;
-    position: relative;
     right: 0;
     top: 20px;
     width: 170px;
 }
 
 .btn-primary {
+    -webkit-transition: all 1s ease;
     background-color: $clr-btn-primary;
-    border: $theme3-dark;
+    border: 1px solid transparent;
+    transition: all 1s ease;
 
     &:hover {
         background-color: $clr-btn-primary-hover;
+        border: 1px solid $clr-white;
     }
 }
 
 .btn-secondary {
+    -webkit-transition: all 1s ease;
     background-color: $clr-btn-secondary;
-    border: $theme3-dark;
+    border: 1px solid transparent;
+    transition: all 1s ease;
 
     &:hover {
         background-color: $clr-btn-secondary-hover;
+        border: 1px solid $clr-white;
     }
 }

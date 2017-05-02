@@ -1,9 +1,11 @@
 input {
+    -webkit-transition: all 1s ease;
     background-color: $theme3-gray-dark;
     border-color: $theme3-gray-light;
     border-width: 0 0 2px 0;
     outline: 0;
     padding: 8px 0;
+    transition: all 1s ease;
 
     &:hover {
         border-color: $theme3-blue-dark;

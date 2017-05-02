@@ -18,16 +18,10 @@ $theme3-orange: $theme-orange;
 $clr-black: #000000;
 $clr-white: #ffffff;
 $clr-alert: #981b1e;
-$clr-green: green;
-
-$clr-links-out: $theme3-blue;
-$clr-links-hover: lighten($theme3-blue, 8%);
-$clr-links_alt-out: $theme3-blue-dark;
-$clr-links_alt-hover: lighten($theme3-blue, 10%);
 
 $clr-btn-primary: $theme3-blue-dark;
 $clr-btn-primary-hover: lighten($clr-btn-primary, 5%);
-$clr-btn-secondary: $theme3-dark;
+$clr-btn-secondary: $theme3-blue-med;
 $clr-btn-secondary-hover: lighten($clr-btn-secondary, 5%);
 
 $clr-dark: $theme3-gray-dark;

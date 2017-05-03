@@ -1,17 +1,15 @@
 input {
     -webkit-transition: all 1s ease;
-    background-color: $theme3-gray-dark;
+    background-color: $theme3-dark;
     border-color: $theme3-gray-light;
     border-width: 0 0 2px 0;
+    color: $theme3-gray-light;
+    display: block;
     outline: 0;
-    padding: 8px 0;
+    padding: 8px 6px;
     transition: all 1s ease;
 
     &:hover {
         border-color: $theme3-blue-dark;
     }
-}
-
-label {
-    display: block;
 }

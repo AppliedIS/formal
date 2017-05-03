@@ -80,12 +80,72 @@
         <h2>Buttons</h2>
         <button class="button btn-secondary">Secondary</button>
         <button class="button btn-primary">Primary</button>
+        <h3>CSS</h3>
+        <pre><code>$speed: '0.25s';
+        $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
+        /* Main Styles */
+        .button {
+            border-radius: 2px;
+            bottom: 0;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+            color: $clr-white;
+            cursor: pointer;
+            height: 40px;
+            left: 0;
+            line-height: 40px;
+            margin: 6px;
+            right: 0;
+            top: 20px;
+            width: 170px;
+        }
+
+        .btn-primary {
+            -webkit-transition: all 1s ease;
+            background-color: $clr-btn-primary;
+            border: 1px solid transparent;
+            transition: all 1s ease;
+
+            &:hover {
+                background-color: $clr-btn-primary-hover;
+                border: 1px solid $clr-white;
+            }
+        }
+
+        .btn-secondary {
+            -webkit-transition: all 1s ease;
+            background-color: $clr-btn-secondary;
+            border: 1px solid transparent;
+            transition: all 1s ease;
+
+            &:hover {
+                background-color: $clr-btn-secondary-hover;
+                border: 1px solid $clr-white;
+            }
+        }
+</code></pre>
       </section>
       <section>
         <h2>Input</h2>
         <div>
           <label class="floating-label">Name</label>
           <input type="text" aria-labelledby="" aria-required="" class="inputText">
+          <h3>CSS</h3>
+          <pre><code>input {
+              -webkit-transition: all 1s ease;
+              background-color: $theme3-dark;
+              border-color: $theme3-gray-light;
+              border-width: 0 0 2px 0;
+              color: $theme3-gray-light;
+              display: block;
+              outline: 0;
+              padding: 8px 6px;
+              transition: all 1s ease;
+
+              &:hover {
+                  border-color: $theme3-blue-dark;
+              }
+          }
+</code></pre>
       </div>
       </section>
   </main>

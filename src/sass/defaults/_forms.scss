@@ -10,7 +10,7 @@
 
 input {
     background: none;
-    border-color: $theme3-blue;
+    border-color: $theme3-blue-dark;
     border-radius: 2px;
     border-width: 0 0 2px 0;
     color: $clr-white;
@@ -19,6 +19,7 @@ input {
     width: 100%;
 
     &:focus {
+        border-color: $theme3-gray-light;
         outline: 0;
 
         ~ label {

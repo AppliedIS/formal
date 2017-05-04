@@ -1,15 +1,88 @@
-input {
-    -webkit-transition: all 1s ease;
-    background-color: $theme3-dark;
-    border-color: $theme3-gray-light;
-    border-width: 0 0 2px 0;
+//@extend-elements
+//original selectors
+//input:focus ~label, textarea:focus ~label, input:valid ~label, textarea:valid ~label
+%extend_1 {
     color: $theme3-gray-light;
-    display: block;
-    outline: 0;
-    padding: 8px 6px;
-    transition: all 1s ease;
+    font-size: 0.75em;
+    top: -18px;
+    transition: all 0.225s ease;
+}
 
-    &:hover {
-        border-color: $theme3-blue-dark;
+input {
+    background: none;
+    border-color: $theme3-blue;
+    border-radius: 2px;
+    border-width: 0 0 2px 0;
+    color: $clr-white;
+    font-size: 1rem;
+    padding: 18px 10px 10px 10px;
+    width: 100%;
+
+    &:focus {
+        outline: 0;
+
+        ~ label {
+            @extend %extend_1;
+		    }
+
+        ~ span {
+            transition: all 0.075s ease;
+            width: 100%;
+        }
+    }
+
+    &:valid ~ label {
+        @extend %extend_1;
+    }
+}
+
+textarea {
+    background-color: $theme3-dark;
+    border: 0;
+    border-radius: 2px;
+    color: $clr-dark;
+    font-size: 1rem;
+    min-height: 15em;
+    padding: 18px 10px 10px 10px;
+    width: 100%;
+
+    &:focus {
+        outline: 0;
+
+        ~ label {
+            @extend %extend_1;
+		    }
+
+        ~ span {
+            transition: all 0.075s ease;
+            width: 100%;
+            }
+    }
+
+    &:valid ~ label {
+        @extend %extend_1;
+    }
+}
+
+.styled-input {
+    border-radius: 2px;
+    margin: 1rem 0;
+    position: relative;
+    width: 293px;
+
+    label {
+        color: $theme3-gray-light;
+        left: 0;
+        padding: 1.3rem 10px 1rem 10px;
+        pointer-events: none;
+        position: absolute;
+        top: -5px;
+        transition: all 0.25s ease;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .styled-input {
+        width: 100%;
     }
 }

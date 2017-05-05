@@ -1,6 +1,5 @@
 
 //Media query
-//Color-Palette
 $small-grid: (
     columns: 12,
     gutter: 50px,
@@ -24,9 +23,18 @@ $xlarge-grid--xlarge: (
     media: '(min-width: 1200px)',
 );
 
-.color-boxes {
+main {
+    @include grid-container;
+}
+
+section {
     @include grid-column(12, $small-grid);
     margin-bottom: 2rem;
+}
+
+//color-palette
+.color-boxes {
+    @include grid-column(12, $small-grid);
 
     @include grid-media($medium-grid--tablet-up) {
         @include grid-column(4);
@@ -35,11 +43,6 @@ $xlarge-grid--xlarge: (
     @include grid-media($large-grid--large) {
         @include grid-column(2);
     }
-}
-
-section {
-    @include grid-container;
-    margin: 20px 0;
 }
 
 //typography
@@ -62,6 +65,16 @@ section {
     }
 }
 
+//Code blocks
+.code-block {
+    @include grid-column(12, $small-grid);
+    margin-bottom: 2rem;
+
+    @include grid-media($large-grid--large) {
+        @include grid-column(6);
+    }
+}
+
 .library {
     background-color: $clr-background;
 }
@@ -69,9 +82,7 @@ section {
 
 //Footer
 
-.footer {
-    padding: 1em 2em;
-}
+
 
 .filterbox {
     background-color: transparent;

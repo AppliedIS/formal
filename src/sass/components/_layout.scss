@@ -32,6 +32,10 @@ section {
     margin-bottom: 2rem;
 }
 
+.collapse-col {
+    @include grid-collapse($small-grid);
+}
+
 //color-palette
 .color-boxes {
     @include grid-column(12, $small-grid);
@@ -81,7 +85,14 @@ section {
 
 
 //Footer
+footer section {
+    @include grid-column(12, $small-grid);
+    margin-bottom: 2rem;
 
+    @include grid-media($large-grid--large) {
+        @include grid-column(4);
+    }
+}
 
 
 .filterbox {

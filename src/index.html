@@ -23,40 +23,42 @@
         <section class="color-palette">
             <h2>Color Palette</h2>
             <p>Colors can be found in _colors.scss file.</p>
-            <div class="color-boxes">
-                <div class="orange-box"></div>
-                <h3>Orange</h3>
-                <p>$theme3-orange: #f0ad4e</p>
-            </div>
-            <div class="color-boxes">
-                <div class="blue-light"></div>
-                <h3>Light Blue</h3>
-                <p>$theme3-blue: #b3d1fd;</p>
-            </div>
-            <div class="color-boxes">
-                <div class="blue-med"></div>
-                <h3>Medium Blue</h3>
-                <p>$theme3-blue-med: #607d8b</p>
-            </div>
-            <div class="color-boxes">
-                <div class="blue-box"></div>
-                <h3>Dark Blue</h3>
-                <p>$theme3-blue-dark: #3075a6;</p>
-            </div>
-            <div class="color-boxes">
-                <div class="gray-light"></div>
-                <h3>Light Gray</h3>
-                <p>$theme3-gray-light: #bcc4cc</p>
-            </div>
-            <div class="color-boxes">
-                <div class="gray-box"></div>
-                <h3>Gray</h3>
-                <p>$theme3-dark: #313d4c</p>
-            </div>
-            <div class="color-boxes">
-                <div class="gray-dark"></div>
-                <h3>Dark Gray</h3>
-                <p>$theme3-gray-dark: #262d37</p>
+            <div class="collapse-col">
+                <div class="color-boxes">
+                    <div class="orange-box"></div>
+                    <h3>Orange</h3>
+                    <p>$theme3-orange: #f0ad4e</p>
+                </div>
+                <div class="color-boxes">
+                    <div class="blue-light"></div>
+                    <h3>Light Blue</h3>
+                    <p>$theme3-blue: #b3d1fd;</p>
+                </div>
+                <div class="color-boxes">
+                    <div class="blue-med"></div>
+                    <h3>Medium Blue</h3>
+                    <p>$theme3-blue-med: #607d8b</p>
+                </div>
+                <div class="color-boxes">
+                    <div class="blue-box"></div>
+                    <h3>Dark Blue</h3>
+                    <p>$theme3-blue-dark: #3075a6;</p>
+                </div>
+                <div class="color-boxes">
+                    <div class="gray-light"></div>
+                    <h3>Light Gray</h3>
+                    <p>$theme3-gray-light: #bcc4cc</p>
+                </div>
+                <div class="color-boxes">
+                    <div class="gray-box"></div>
+                    <h3>Gray</h3>
+                    <p>$theme3-dark: #313d4c</p>
+                </div>
+                <div class="color-boxes">
+                    <div class="gray-dark"></div>
+                    <h3>Dark Gray</h3>
+                    <p>$theme3-gray-dark: #262d37</p>
+                </div>
             </div>
         </section>
         <section class="typography">
@@ -80,9 +82,10 @@
                 <button class="button btn-secondary">Secondary</button>
                 <button class="button btn-primary">Primary</button>
             </div>
-            <div class="code-block">
-                <h3>SCSS</h3>
-                <pre><code>
+            <div class="collapse-col">
+                <div class="code-block">
+                    <h3>SCSS</h3>
+                    <pre><code>
 .button {
     border-radius: 2px;
     bottom: 0;
@@ -122,28 +125,32 @@
     }
 }
 </code></pre>
-</div>
-<div class="code-block">
-    <h3>HTML</h3>
-                <pre><code>&lt;button class="button btn-secondary">Secondary&lt;/button>
+                </div>
+            </div>
+            <div class="collapse-col">
+                <div class="code-block">
+                    <h3>HTML</h3>
+                    <pre><code>&lt;button class="button btn-secondary">Secondary&lt;/button>
 &lt;button class="button btn-primary">Primary&lt;/button>
 </code></pre>
+                </div>
             </div>
         </section>
         <section>
             <div>
-            <h2>Input</h2>
-            <form>
-                <div class="styled-input">
-                    <input type="text" name="Name" required />
-                    <label>Name</label>
-                </div>
-            </form>
-        </div>
-        <div class="code-block">
+                <h2>Input</h2>
+                <form>
+                    <div class="styled-input">
+                        <input type="text" name="Name" required />
+                        <label>Name</label>
+                    </div>
+                </form>
+            </div>
+            <div class="collapse-col">
+                <div class="code-block">
 
-            <h3>CSS</h3>
-            <pre><code>input {
+                    <h3>CSS</h3>
+                    <pre><code>input {
               -webkit-transition: all 1s ease;
               background-color: $theme3-dark;
               border-color: $theme3-gray-light;
@@ -159,7 +166,8 @@
               }
           }
 </code></pre>
-</div>
+                </div>
+            </div>
 
         </section>
     </main>

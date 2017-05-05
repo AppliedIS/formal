@@ -38,12 +38,12 @@ input {
 }
 
 textarea {
-    background-color: $theme3-dark;
-    border: 0;
+    background: none;
+    border-color: $theme3-blue-dark;
     border-radius: 2px;
-    color: $clr-dark;
+    border-width: 0 0 2px 0;
+    color: $clr-white;
     font-size: 1rem;
-    min-height: 15em;
     padding: 18px 10px 10px 10px;
     width: 100%;
 

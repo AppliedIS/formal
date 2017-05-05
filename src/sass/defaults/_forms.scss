@@ -2,7 +2,7 @@
 //original selectors
 //input:focus ~label, textarea:focus ~label, input:valid ~label, textarea:valid ~label
 %extend_1 {
-    color: $theme3-gray-light;
+    color: $theme-gray-light;
     font-size: 0.75em;
     top: -18px;
     transition: all 0.225s ease;
@@ -10,7 +10,7 @@
 
 input {
     background: none;
-    border-color: $theme3-blue-dark;
+    border-color: $theme-blue-dark;
     border-radius: 2px;
     border-width: 0 0 2px 0;
     color: $clr-white;
@@ -19,7 +19,7 @@ input {
     width: 100%;
 
     &:focus {
-        border-color: $theme3-gray-light;
+        border-color: $theme-gray-light;
         outline: 0;
 
         ~ label {
@@ -39,7 +39,7 @@ input {
 
 textarea {
     background: none;
-    border-color: $theme3-blue-dark;
+    border-color: $theme-blue-dark;
     border-radius: 2px;
     border-width: 0 0 2px 0;
     color: $clr-white;
@@ -72,7 +72,7 @@ textarea {
     width: 293px;
 
     label {
-        color: $theme3-gray-light;
+        color: $theme-gray-light;
         left: 0;
         padding: 1.3rem 10px 1rem 10px;
         pointer-events: none;

@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color: $theme3-blue;
+    color: $theme-blue;
     text-decoration: none;
 
     &:hover {
@@ -15,6 +15,6 @@ a {
 }
 
 pre {
-    background-color: $theme3-dark;
+    background-color: $theme-dark;
     padding: 6px;
 }

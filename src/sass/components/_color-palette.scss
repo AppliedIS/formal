@@ -5,40 +5,45 @@
     height: 70px;
 }
 
+.orange-light-box {
+    background: $theme-orange-light;
+    height: 70px;
+}
+
 .blue-light {
-    background: $theme3-blue;
+    background: $theme-blue;
     height: 70px;
 }
 
 .blue-med {
-    background: $theme3-blue-med;
+    background: $theme-blue-med;
     height: 70px;
 }
 
 .blue-box {
-    background: $theme3-blue-dark;
+    background: $theme-blue-dark;
     height: 70px;
 }
 
 .gray-light {
-    background: $theme3-gray-light;
+    background: $theme-gray-light;
     height: 70px;
 }
 
 .gray-box {
-    background: $theme3-dark;
+    background: $theme-dark;
     height: 70px;
 }
 
 .gray-dark {
-    background: $theme3-gray-dark;
-    border: 1px solid $theme3-gray-light;
+    background: $theme-gray-dark;
+    border: 1px solid $theme-gray-light;
     height: 70px;
 }
 
 
 .color-boxes {
-    border: 1px solid $theme3-gray-dark;
+    border: 1px solid $theme-gray-dark;
     margin-bottom: 20px;
 
     h3 {

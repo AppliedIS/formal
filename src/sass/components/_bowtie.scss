@@ -13,31 +13,31 @@
     width: 16px;
     z-index: 1;
 
-    &:before {
+    &::before {
         border-bottom: 10px solid transparent;
         border-left: 16px solid $theme-orange;
         border-radius: 3px;
         border-top: 10px solid transparent;
         content: '';
-        height: 0px;
+        height: 0;
         left: -8px;
         position: absolute;
         top: -2px;
-        width: 0px;
+        width: 0;
         z-index: 1;
     }
 
-    &:after {
+    &::after {
         border-bottom: 10px solid transparent;
         border-radius: 3px;
         border-right: 16px solid $theme-orange;
         border-top: 10px solid transparent;
         content: '';
-        height: 0px;
+        height: 0;
         left: 6px;
         position: absolute;
         top: -2px;
-        width: 0px;
+        width: 0;
         z-index: 1;
     }
 }
@@ -54,60 +54,76 @@
 }
 
 @-webkit-keyframes spin {
-    from, to {
+    from,
+    to {
         -webkit-transform: rotate(0deg);
     }
+
     5% {
         -webkit-transform: rotate(0deg);
     }
+
     15% {
         -webkit-transform: rotate(720deg);
     }
+
     16% {
         -webkit-transform: rotate(0deg);
     }
 }
 
 @-moz-keyframes spin {
-    from, to {
+    from,
+    to {
         -moz-transform: rotate(0deg);
     }
+
     5% {
         -moz-transform: rotate(0deg);
     }
+
     15% {
         -moz-transform: rotate(720deg);
     }
+
     16% {
         -moz-transform: rotate(0deg);
     }
 }
 
 @-ms-keyframes spin {
-    from, to {
+    from,
+    to {
         -ms-transform: rotate(0deg);
     }
+
     5% {
         -ms-transform: rotate(0deg);
     }
+
     15% {
         -ms-transform: rotate(720deg);
     }
+
     16% {
         -ms-transform: rotate(0deg);
     }
 }
 
 @-o-keyframes spin {
-    from, to {
+    from,
+    to {
         -o-transform: rotate(0deg);
     }
+
     5% {
         -o-transform: rotate(0deg);
     }
+
     15% {
         -o-transform: rotate(720deg);
     }
+
     16% {
         -o-transform: rotate(0deg);
     }

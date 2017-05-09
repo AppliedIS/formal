@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <title>Another Awesome AIS Application</title>
-
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="/app/components/form/calendar.js"></script>
     <link rel="stylesheet" href="/styles/bundle.min.css" />
+
 </head>
 
 <body>
@@ -35,9 +39,16 @@
                     <input type="text" name="Email" required />
                     <label>Email</label>
                 </div>
+                <h3>Date Range</h3>
+                <label class="control-label" for="from">From</label>
+                <input type="text" id="from"/>
+                <label class="control-label" for="to">To</label>
+                <input type="text" id='to'/>
+
                 <button class="button btn-secondary">Cancel</button>
                 <button class="button btn-primary">Send Message</button>
-            </form>
+
+        </form>
         </section>
 
     </main>

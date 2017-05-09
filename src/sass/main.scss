@@ -7,12 +7,15 @@
 // Defaults
 @import 'defaults/breakpoints';
 @import 'defaults/colors';
+@import 'defaults/forms';
 @import 'defaults/typography';
 @import 'defaults/tags';
-@import 'defaults/forms';
 
 // Components
+@import 'components/bowtie';
 @import 'components/buttons';
+@import 'components/calendar';
+@import 'components/color-palette';
 @import 'components/layout';
 
 // Pages

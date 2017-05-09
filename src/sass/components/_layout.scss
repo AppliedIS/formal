@@ -1,27 +1,102 @@
+
+//Media query
+$small-grid: (
+    columns: 12,
+    gutter: 50px,
+);
+
+$medium-grid--tablet-up: (
+    columns: 12,
+    gutter: 50px,
+    media: '(min-width: 768px)',
+);
+
+$large-grid--large: (
+    columns: 12,
+    gutter: 50px,
+    media: '(min-width: 920px)',
+);
+
+$xlarge-grid--xlarge: (
+    columns: 12,
+    gutter: 50px,
+    media: '(min-width: 1200px)',
+);
+
 main {
-    @include outer-container(100%);
-    @include pad(1em 2em);
-    @include span-columns(12);
+    @include grid-container;
 }
 
-form {
-    @include media($tablet-landscape) {
-        @include omega(5n);
-        @include span-columns(3);
+section {
+    @include grid-column(12, $small-grid);
+    margin-bottom: 2rem;
+}
+
+.collapse-col {
+    @include grid-collapse($small-grid);
+}
+
+//color-palette
+.color-boxes {
+    @include grid-column(12, $small-grid);
+
+    @include grid-media($medium-grid--tablet-up) {
+        @include grid-column(4);
     }
-    @include media($desktop) {
-        @include omega(6n);
-        @include span-columns(3);
+
+    @include grid-media($large-grid--large) {
+        @include grid-column(2);
     }
 }
 
-pre {
-    @include media($tablet-landscape) {
-        @include omega(5n);
-        @include span-columns(8);
+//typography
+.typography {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        @include grid-column(12, $small-grid);
+        margin-bottom: 2rem;
+
+        @include grid-media($medium-grid--tablet-up) {
+            @include grid-column(4);
+        }
+
+        @include grid-media($xlarge-grid--xlarge) {
+            @include grid-column(2);
+        }
     }
-    @include media($desktop) {
-        @include omega(6n);
-        @include span-columns(8);
+}
+
+//Code blocks
+.code-block {
+    @include grid-column(12, $small-grid);
+    margin-bottom: 2rem;
+
+    @include grid-media($large-grid--large) {
+        @include grid-column(6);
     }
+}
+
+.library {
+    background-color: $clr-background;
+}
+
+
+//Footer
+footer section {
+    @include grid-column(12, $small-grid);
+    margin-bottom: 2rem;
+
+    @include grid-media($large-grid--large) {
+        @include grid-column(4);
+    }
+}
+
+
+.filterbox {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
 }

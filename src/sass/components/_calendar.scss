@@ -1,0 +1,71 @@
+//jquery UI
+.ui-widget-header {
+    background: $theme-blue-dark;
+    border: 0;
+    color: $clr-white;
+}
+
+// Corner radius 
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-top-left-radius: 2px;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    border-top-right-radius: 2px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+    border-bottom-left-radius: 2px;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+    border-bottom-right-radius: 2px;
+}
+
+.ui-widget.ui-widget-content {
+    background-color: $theme-dark;
+    border: 1px solid $clr-black;
+    color: $clr-txt;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active  {
+    background: $theme-blue-dark;
+    border: 1px solid $clr-gray-dark-lighten;
+    color: $clr-white;
+}
+
+.ui-widget-header a {
+    color: $clr-white;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    background-color: $theme-orange-light;
+    color: $clr-black;
+}
+
+.ui-state-hover:hover {
+    background-color: $theme-orange-light;
+    color: $clr-black;
+}

@@ -8,7 +8,7 @@
   "scripts": {
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message remove-dist",
-    "start": "npm-run-all --parallel test:watch open:src lint:watch mocks sass:watch",
+    "start": "npm-run-all --parallel open:src lint:watch mocks sass:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -17,6 +17,8 @@
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run clean-dist && npm run lint && npm run test",
     "build": "babel-node tools/build.js && npm run open:dist",
+    "build:demo": "npm run build:sass && babel-node tools/buildDemo.js && npm run copysass",
+    "build:sass": "npm run sass",
     "test": "mocha tools/testSetup.js \"src/app/**/*.spec.js\" --reporter progress",
     "test:cover": "babel-node node_modules/isparta/bin/isparta cover --root src --report html node_modules/mocha/bin/_mocha -- --require ./tools/testSetup.js \"src/**/*.spec.js\" --reporter progress",
     "test:cover:travis": "babel-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require ./tools/testSetup.js \"src/**/*.spec.js\" && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
@@ -28,6 +30,7 @@
     "postsass": "npm-run-all --parallel runpostcss copyfonts copymarkers copyawesomemarkers",
     "runpostcss": "postcss -c postcss.config.json",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* src/fonts",
+    "copysass": "copyfiles -f src/styles/* docs/styles/",
     "copymarkers": "copyfiles -f node_modules/leaflet/dist/images/* src/styles/images",
     "copyawesomemarkers": "copyfiles -f node_modules/drmonty-leaflet-awesome-markers/css/images/* src/styles/images",
     "sass:watch": "nodemon -e scss -w src/sass -x \"npm run sass\""

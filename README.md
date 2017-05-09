@@ -1,15 +1,18 @@
 
 # formal
 
-a javascript playground for forms
-
-## React/Redux Starter Kit
-
-This starter kit is based on the work of Cory House and his
-[react-slingshot](https://github.com/coryhouse/react-slingshot) starter kit.
+Pattern Library
 
 ## Quick start
 
 `npm install`
 
 `npm start`
+
+## Demo
+
+[demo](http://appliedis.github.io/)
+
+To update the github pages demo `npm run build:demo`
+
+to view the demo on your local machine run `npm run open:dist`

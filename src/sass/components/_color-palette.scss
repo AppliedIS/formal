@@ -1,0 +1,58 @@
+
+
+.orange-box {
+    background: $theme-orange-dark;
+    height: 70px;
+}
+
+.orange-light-box {
+    background: $theme-orange-light;
+    height: 70px;
+}
+
+.blue-light {
+    background: $theme-blue;
+    height: 70px;
+}
+
+.blue-med {
+    background: $theme-blue-med;
+    height: 70px;
+}
+
+.blue-box {
+    background: $theme-blue-dark;
+    height: 70px;
+}
+
+.gray-light {
+    background: $theme-gray-light;
+    height: 70px;
+}
+
+.gray-box {
+    background: $theme-dark;
+    height: 70px;
+}
+
+.gray-dark {
+    background: $theme-gray-dark;
+    border: 1px solid $theme-gray-light;
+    height: 70px;
+}
+
+
+.color-boxes {
+    border: 1px solid $theme-gray-dark;
+    margin-bottom: 20px;
+
+    h3 {
+        margin-bottom: 0;
+        padding-left: 8px;
+    }
+
+    p {
+        margin-top: 0;
+        padding-left: 8px;
+    }
+}

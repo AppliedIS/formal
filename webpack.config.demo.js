@@ -7,7 +7,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
 
-const pathRoot = '/';
+const pathRoot = '/formal/';
 
 const GLOBALS = {
   'process.env': {

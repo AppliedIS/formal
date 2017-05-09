@@ -1,4 +1,5 @@
-$("#from").datepicker({
+$(document).ready(function() {
+  $("#from").datepicker({
   dateFormat: 'mm/dd/yy',
   minDate: '1',//min date set to next day
   onClose: function(dateStr) {
@@ -17,4 +18,5 @@ $('#to').datepicker({
   dateFormat: 'mm/dd/yy',
   minDate: '+2d',//Set date x days from today
   maxDate: '+1y +1d'//max date x year + 1 day
+});
 });

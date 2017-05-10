@@ -24,12 +24,12 @@ export default {
   debug: true,
   devtool: 'source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
   noInfo: true, // set to false to see a list of every file being bundled.
-  entry: path.resolve(__dirname, 'src/'),
+  entry: path.resolve(__dirname, 'src/app/app.js') ,
   target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
   output: {
     path: path.resolve(__dirname, 'docs/'),
     publicPath: pathRoot,
-    filename: '[name].[chunkhash].js'
+    filename: 'app.js'
   },
   plugins: [
     // Hash the files using MD5 so that their names change when the content changes.
@@ -47,6 +47,23 @@ export default {
     // Generate HTML file that contains references to generated bundles. See here for how this works: https://github.com/ampedandwired/html-webpack-plugin#basic-usage
     new HtmlWebpackPlugin({
       template: 'src/index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'template-form.html',
+      template: 'src/template-form.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,

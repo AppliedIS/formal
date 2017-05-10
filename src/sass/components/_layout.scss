@@ -29,7 +29,11 @@ main {
 
 section {
     @include grid-column(12, $small-grid);
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
+
+    &:last-of-type {
+        margin-bottom: 4.5rem;
+    }
 }
 
 .collapse-col {
@@ -79,9 +83,33 @@ section {
     }
 }
 
+//contact
+main.contact section {
+    @include grid-column(12, $small-grid);
+
+    @include grid-media($medium-grid--tablet-up) {
+        @include grid-column(6);
+    }
+}
+
+main.contact section:first-of-type {
+    @include grid-column(12, $small-grid);
+
+    @include grid-media($medium-grid--tablet-up) {
+        @include grid-column(12);
+    }
+}
+
+.contact,
 .library {
     background-color: $clr-background;
 }
+
+main section:first-of-type  {
+    margin-bottom: 2rem;
+    padding: 65px 0 0 0;
+}
+
 
 
 //Footer

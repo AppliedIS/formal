@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#from").datepicker({
+  $('#from').datepicker({
   dateFormat: 'mm/dd/yy',
   minDate: '1',//min date set to next day
   onClose: function(dateStr) {

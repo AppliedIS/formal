@@ -29,7 +29,11 @@ main {
 
 section {
     @include grid-column(12, $small-grid);
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
+
+    &:last-of-type {
+        margin-bottom: 4.5rem;
+    }
 }
 
 .collapse-col {
@@ -81,6 +85,10 @@ section {
 
 .library {
     background-color: $clr-background;
+}
+
+main section:first-of-type {
+    padding: 65px 0 0 0;
 }
 
 

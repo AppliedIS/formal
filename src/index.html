@@ -12,15 +12,19 @@
 
 <body>
     <main class="library">
-        <section>
-            <div class="formal">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1011040/formal.svg" height="40px">
-            </div>
-            <div class="bowtie"></div>
-            <div class="bowtie-circle"></div>
-            <h1>Formal</h1>
-            <p>A dark theme for digital media</p>
-        </section>
+
+        <header>
+            <nav>
+                <img src="/images/formal.svg" height="32px">
+                <a class="active" href="index.html">Pattern Library</a>
+                <a href="template-form.html">Forms Template</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <p>A dark theme for digital media</p>
+            </nav>
+
+        </header>
+
         <section class="color-palette">
             <h2>Color Palette</h2>
             <p>Color dependencies can be found in _colors.scss file.</p>
@@ -146,7 +150,7 @@
             <div>
                 <h2>Input</h2>
                 <form>
-                    <div class="styled-input">
+                    <div class="input-styles">
                         <input type="text" name="Name" required />
                         <label>Name</label>
                     </div>
@@ -215,7 +219,7 @@ input {
                 <div class="code-block">
                     <h3>HTML</h3>
                     <pre><code>&lt;form>
-    &lt;div class="styled-input">
+    &lt;div class="input-styles">
         &lt;input type="text" name="Name" required />
         &lt;label>Name&lt;/label>
     &lt;/div>
@@ -245,20 +249,19 @@ input {
         <section>
             <img src="/images/formal-white.svg" class="footer__logo" height="40px" />
             <p>
-                Flock is a clustering and classification engine for processing x/y-based signatures, giving intelligence analysts a head start by providing typing information and context around a given event.
-            </p>
-            <p>
-                <i class="fa fa-github"></i> <a href="https://github.com/appliedis/flock-ui">https://github.com/appliedis/flock-ui</a>
-                <br /> Our repository for the user interface, built with React+Redux, D3.js, Leaflet, Bourbon/Neat, and other technologies.
-            </p>
-            <p>
-                <i class="fa fa-github"></i> <a href="https://github.com/appliedis/flock-api">https://github.com/appliedis/flock-api</a>
-                <br /> Our repository for the backing api for the user interface.
-            </p>
-            <p>
-                <i class="fa fa-github"></i> <a href="https://github.com/appliedis/flock-process">https://github.com/appliedis/flock-process</a>
-                <br /> Our repository for performing the signature matching using Apache Spark's Machine Learning libraries.
-            </p>
+                Formal is a dark theme pattern library for digital media. Developers can use the code to create a multiple applications with a cohesive and compliant user experience.
+                <p>
+                    <i class="fa fa-github"></i> <a href="https://github.com/appliedis/flock-ui">https://github.com/appliedis/flock-ui</a>
+                    <br /> Our repository for the user interface, built with Bourbon/Neat, and other technologies.
+                </p>
+                <p>
+                    <i class="fa fa-github"></i> <a href="https://github.com/appliedis/flock-api">https://github.com/appliedis/flock-api</a>
+                    <br /> Our repository for the backing api for the user interface.
+                </p>
+                <p>
+                    <i class="fa fa-github"></i> <a href="https://github.com/appliedis/flock-process">https://github.com/appliedis/flock-process</a>
+                    <br /> Our repository for performing the signature matching using Apache Spark's Machine Learning libraries.
+                </p>
         </section>
 
         <section>

@@ -19,13 +19,13 @@ nav {
 
         .active
         {
-            background-color: $theme-orange-light;
+            background-color: $theme-orange;
             color: $clr-black;
         }
 
         &:hover
         {
-            background-color: $theme-orange-light;
+            background-color: $theme-orange;
             color: $clr-black;
             text-decoration: none;
         }
@@ -38,6 +38,7 @@ nav {
 
     p {
         float: right;
+        margin-top: 42px;
         padding-right: 15px;
     }
 }

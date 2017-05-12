@@ -2386,7 +2386,7 @@ textarea {
 
 nav {
   background-color: #313d4c;
-  height: 48px;
+  height: 75px;
   left: 0;
   position: fixed;
   top: 0;
@@ -2395,21 +2395,23 @@ nav {
   nav a {
     display: block;
     float: left;
+    margin-top: 28px;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none; }
     nav a .active {
-      background-color: #f4c786;
+      background-color: #f0ad4e;
       color: #000000; }
     nav a:hover {
-      background-color: #f4c786;
+      background-color: #f0ad4e;
       color: #000000;
       text-decoration: none; }
   nav img {
     float: left;
-    padding: 9px 30px 9px 15px; }
+    padding: 15px 30px 9px 15px; }
   nav p {
     float: right;
+    margin-top: 42px;
     padding-right: 15px; }
 
 nav .active {

@@ -1,0 +1,40 @@
+$base-line-height: 1rem;
+
+.expander {
+
+    margin-top: 30px;
+    width: 60%;
+
+    .expander-trigger {
+        border-bottom: 1px solid $theme-gray-light;
+        cursor: pointer;
+        display: block;
+        font-size: $expander-toggle-size;
+        margin-bottom: $expander-toggle-size;
+        padding-bottom: $expander-toggle-size / 4;
+        text-decoration: none;
+        user-select: none;
+
+        &::before {
+            content: '\25BC';
+            font-size: $expander-arrow-width;
+            margin-right: 0.5em;
+        }
+    }
+
+    .expander-content p {
+        color: $clr-txt;
+        line-height: $base-line-height;
+    }
+
+    .expander-hidden {
+        &::before {
+            content: '\25BA';
+            font-size: $expander-arrow-width;
+        }
+    }
+
+    .expander-hidden + .expander-content {
+        display: none;
+    }
+}

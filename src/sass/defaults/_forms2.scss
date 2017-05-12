@@ -1,0 +1,75 @@
+/* Powered by: https://github.com/tonystar/float-label-css
+ */
+
+/* Re-usable mixins
+ * https://github.com/tonystar/float-label-css/blob/master/scss/_mixins.scss
+ */
+@mixin float-label-container {
+    display: block;
+    position: relative;
+}
+
+@mixin float-label {
+    label,
+    > span {
+        @content;
+        cursor: text;
+        font-size: 75%;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        transition: all .2s;
+    }
+}
+
+@mixin float-label-input {
+
+    &::placeholder {
+        opacity: 1;
+        transition: all .2s;
+    }
+
+    &:placeholder-shown:not(:focus)::placeholder {
+        opacity: 0;
+    }
+}
+
+@mixin float-label-scaled {
+    &:placeholder-shown:not(:focus) + * {
+        @content;
+        font-size: 150%;
+        opacity: .5;
+  }
+}
+
+.has-float-label {
+    @include float-label-container;
+    @include float-label;
+
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    input,
+    select {
+        @include float-label-input;
+        border: 0;
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+        border-radius: 0;
+        font-size: inherit;
+        margin-bottom: 2px;
+        padding-top: 1em;
+
+        @include float-label-scaled {
+            top: .25em;
+        }
+
+        &:focus {
+            border-color: rgba(0, 0, 0, .5);
+            outline: none;
+        }
+    }
+}

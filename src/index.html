@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <title>Another Awesome AIS Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.expander-trigger').click(function() {
+                $(this).toggleClass("expander-hidden");
+            });
+        });
+    </script>
 
     <link rel="stylesheet" href="./styles/bundle.min.css" />
+
+
 
 </head>
 
@@ -96,9 +106,12 @@
                 <button class="button btn-primary">Primary</button>
             </div>
             <div class="collapse-col">
-                <div class="code-block">
-                    <h3>SCSS</h3>
-                    <pre><code>.button {
+                <div class="expander">
+                    <a href="javascript:void(0)" class="expander-trigger expander-hidden">Show SCSS</a>
+                    <div class="expander-content">
+                        <div class="code-block">
+                            <h3>SCSS</h3>
+                            <pre><code>.button {
     border-radius: 2px;
     bottom: 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
@@ -137,14 +150,21 @@
     }
 }
 </code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="collapse-col">
-                <div class="code-block">
-                    <h3>HTML</h3>
-                    <pre><code>&lt;button class="button btn-secondary">Secondary&lt;/button>
+                <div class="expander">
+                    <a href="javascript:void(0)" class="expander-trigger expander-hidden">Show HTML</a>
+                    <div class="expander-content">
+                        <div class="code-block">
+                            <h3>HTML</h3>
+                            <pre><code>&lt;button class="button btn-secondary">Secondary&lt;/button>
 &lt;button class="button btn-primary">Primary&lt;/button>
 </code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -159,10 +179,13 @@
                 </form>
             </div>
             <div class="collapse-col">
-                <div class="code-block">
+                <div class="expander">
+                    <a href="javascript:void(0)" class="expander-trigger expander-hidden">Show SCSS</a>
+                    <div class="expander-content">
+                        <div class="code-block">
 
-                    <h3>SCSS</h3>
-                    <pre><code>%extend_1 {
+                            <h3>SCSS</h3>
+                            <pre><code>%extend_1 {
     color: $theme3-gray-light;
     font-size: 0.75em;
     top: -18px;
@@ -215,18 +238,25 @@ input {
     }
 }
 </code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="collapse-col">
-                <div class="code-block">
-                    <h3>HTML</h3>
-                    <pre><code>&lt;form>
+                <div class="expander">
+                    <a href="javascript:void(0)" class="expander-trigger expander-hidden">Show HTML</a>
+                    <div class="expander-content">
+                        <div class="code-block">
+                            <h3>HTML</h3>
+                            <pre><code>&lt;form>
     &lt;div class="input-styles">
         &lt;input type="text" name="Name" required />
         &lt;label>Name&lt;/label>
     &lt;/div>
 &lt;/form>
 </code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -262,14 +292,14 @@ input {
 
             <p>
                 <h4>Applied Information Sciences, Inc.</h4></p>
-                <p>
-                    2681 Commons Blvd
-                    <br />Beavercreek, OH 45431
-                    <br />Phone: 937.999.2951
-                </p>
-                <p>
-                    <a href="mailto:sales@appliedis.com">sales@appliedis.com</a>
-                </p>
+            <p>
+                2681 Commons Blvd
+                <br />Beavercreek, OH 45431
+                <br />Phone: 937.999.2951
+            </p>
+            <p>
+                <a href="mailto:sales@appliedis.com">sales@appliedis.com</a>
+            </p>
 
             <p>
                 AIS delivers a broad range of consulting and technical services to commercial and government organizations. It's also a great place to work at!

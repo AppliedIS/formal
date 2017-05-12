@@ -2408,7 +2408,7 @@ nav {
       text-decoration: none; }
   nav img {
     float: left;
-    padding: 15px 30px 9px 15px; }
+    padding: 25px 30px 9px 15px; }
   nav p {
     float: right;
     margin-top: 42px;
@@ -2577,7 +2577,6 @@ pre {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   color: #ffffff;
   cursor: pointer;
-  height: 40px;
   left: 0;
   line-height: 40px;
   margin: 6px;
@@ -2706,6 +2705,31 @@ a.ui-button:active,
     margin-top: 0;
     padding-left: 8px; }
 
+.expander {
+  margin-top: 30px;
+  width: 60%; }
+  .expander .expander-trigger {
+    border-bottom: 1px solid #bcc4cc;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.25em;
+    text-decoration: none;
+    user-select: none; }
+    .expander .expander-trigger::before {
+      content: '\25BC';
+      font-size: 0.7em;
+      margin-right: 0.5em; }
+  .expander .expander-content p {
+    color: #bcc4cc;
+    line-height: 1rem; }
+  .expander .expander-hidden::before {
+    content: '\25BA';
+    font-size: 0.7em; }
+  .expander .expander-hidden + .expander-content {
+    display: none; }
+
 main::after {
   clear: both;
   content: "";
@@ -2754,26 +2778,17 @@ section {
     .typography h3,
     .typography h4,
     .typography p {
-      width: calc(33.33333% - 66.66667px);
-      float: left;
-      margin-left: 50px; } }
-  @media (min-width: 1200px) {
-    .typography h1,
-    .typography h2,
-    .typography h3,
-    .typography h4,
-    .typography p {
-      width: calc(16.66667% - 58.33333px);
+      width: calc(100% - 100px);
       float: left;
       margin-left: 50px; } }
 
-.code-block {
+.expander {
   width: calc(100% - 100px);
   float: left;
   margin-left: 50px;
   margin-bottom: 2rem; }
   @media (min-width: 920px) {
-    .code-block {
+    .expander {
       width: calc(50% - 75px);
       float: left;
       margin-left: 50px; } }

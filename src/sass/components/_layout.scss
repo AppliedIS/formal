@@ -64,17 +64,14 @@ section {
         margin-bottom: 2rem;
 
         @include grid-media($medium-grid--tablet-up) {
-            @include grid-column(4);
+            @include grid-column(12);
         }
 
-        @include grid-media($xlarge-grid--xlarge) {
-            @include grid-column(2);
-        }
     }
 }
 
 //Code blocks
-.code-block {
+.expander {
     @include grid-column(12, $small-grid);
     margin-bottom: 2rem;
 

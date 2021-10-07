@@ -5,6 +5,8 @@ Pattern Library
 
 ## Quick start
 
+Uses node v7.10.0
+
 `npm install`
 
 `npm start`
